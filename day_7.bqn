@@ -16,3 +16,6 @@ Eval_size ← {
 
 Sol_7 ← {{+´(100000⊸≥𝕩)×𝕩}(Evalsize⟜𝕩)¨ ↕(+⟜1 ≠dictionary)}
 •Out "Day 7: " ∾ •Fmt (Sol_7 data_7)
+
+Sol_7_2 ← {{(⊑⍋|𝕩-(-⟜(4×10⋆7) ⌈´𝕩))⊑𝕩}(Evalsize⟜𝕩)¨ ↕(+⟜1 ≠dictionary)}
+•Out "Day 7 part 2: " ∾ •Fmt (Sol_7_2 data_7)
