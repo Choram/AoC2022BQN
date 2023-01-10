@@ -1,4 +1,4 @@
-data_10←•Flines "day_10.txt"
+data_10 ← •Flines "day_10.txt"
 
 parsed_data ← (⊢-˜+`×¬)∘(' '⊸≡¨)⊸⊔¨data_10
 Str_to_int ← {
@@ -16,5 +16,5 @@ Find_index ← {
     index←{⊑+˝𝕩×↕≠𝕩}0∾1↓∊𝕩⍷∧𝕩∾commands
     {⊑𝕩∊commands ? index; index-1}𝕩
 }
-sol_10←+´{𝕩×⊑⟜numbers∘Find_index𝕩}¨(↕∘⌈)⌾(÷⟜40-⟜20)⊑⌽commands
+sol_10 ← +´{𝕩×⊑⟜numbers∘Find_index𝕩}¨(↕∘⌈)⌾(÷⟜40-⟜20)⊑⌽commands
 •Out "Day 10: " ∾ •Fmt (sol_10)
